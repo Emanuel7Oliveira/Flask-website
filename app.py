@@ -6,7 +6,7 @@ app = Flask(__name__, template_folder='templates')
 def homepage():
     return render_template('homepage.html')
 
-@app.route('/google')
+@app.route('/gooogle')
 def google():
     return redirect("http://google.com")
 
