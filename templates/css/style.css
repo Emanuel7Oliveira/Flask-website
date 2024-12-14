@@ -16,6 +16,7 @@ header {
   background-color: #724e2c;
   padding: 20px 0;
   text-align: center;
+  position: relative;
 }
 
 header h1 {
@@ -28,6 +29,58 @@ header h1 {
 header p {
   color: #9c6f44;
   font-size: 1.2em;
+}
+
+.login_button1 {
+  padding: 10px 20px;
+  border: 2px solid #f4f4f4;
+  border-radius: 5px;
+  background: #f4f4f4;
+  color: #563517;
+  font-size: 1.9em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login_button1:hover {
+  background-color: #563517;
+  color: #f4f4f4;
+}
+
+/* Estilo para o input de nome de usuário */
+input[type="text"] {
+    width: 75%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 2px solid #f4f4f4;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #563517;
+}
+
+/* Estilo do botão */
+.login_button {
+    width: 50%;
+    padding: 10px 15px;
+    border: 2px solid #f4f4f4;
+    border-radius: 5px;
+    background-color: #9c6f44;
+    color: #563517;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+/* Animação ao passar o mouse */
+.login_button:hover {
+    background-color: #563517;
+    color: #fff;
 }
 
 .container {
