@@ -1,0 +1,15 @@
+# Arquivos Python compilados
+*.pyc
+*.pyo
+__pycache__/
+
+# Diretórios de ambientes virtuais
+venv/
+env/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de log
+*.log
