@@ -12,7 +12,7 @@ def homepage():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    if request.method == 'POST' and request.form['username'] != '':
+    if request.method == 'POST' and request.form['username'].strip() != '':
         session['username'] = request.form['username']
         return redirect(url_for('homepage'))
     return render_template('login.html')
