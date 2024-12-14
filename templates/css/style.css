@@ -32,16 +32,16 @@ header p {
 }
 
 .login_button1 {
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: 2px solid #f4f4f4;
   border-radius: 5px;
   background: #f4f4f4;
   color: #563517;
-  font-size: 1.9em;
+  font-size: 1.2em;
   text-transform: uppercase;
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
   transition: 0.3s;
 }
