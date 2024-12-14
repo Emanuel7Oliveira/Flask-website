@@ -2,9 +2,9 @@ name: Lint Code Base
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: main
   pull_request:
-    branches: [ $default-branch ]
+    branches: main
 jobs:
   run-lint:
     runs-on: ubuntu-latest
@@ -19,5 +19,5 @@ jobs:
         uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: $default-branch
+          DEFAULT_BRANCH: ${{ github.ref == 'refs/heads/main' && 'main' || 'default-branch' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
