@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Testing database.">
+    <meta name="keywords" content="programacao,html,css,javascript">
+    <meta name="author" content="EmasCode">
+    <title>SignUp</title>
+</head>
+<body>
+    <h1>Create User</h1>
+
+    <!-- Formulário para adicionar usuário -->
+    <form action="http://127.0.0.1:5000/signup" method="POST">
+        <input type="text" name="fullname" placeholder="Input full name" required><br>
+        <input type="text" name="username" placeholder="Create username" required><br>
+        <input type="email" name="email" placeholder="Input@email" required><br>
+        <input type="password" name="password" placeholder="Create password" required><br>
+        <input type="submit" value="Create account">
+    </form>
+    <a href="http://127.0.0.1:5000/">Back</a>
+    {% if error %}
+      <span>{{ error }}</span>
+    {% endif %}
+</body>
+</html>

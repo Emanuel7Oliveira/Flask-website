@@ -53,7 +53,19 @@ header p {
 
 /* Estilo para o input de nome de usuário */
 input[type="text"] {
-    width: 75%;
+    width: 65%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 2px solid #f4f4f4;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #563517;
+}
+
+input[type="password"] {
+    width: 65%;
     padding: 10px 15px;
     margin: 10px 0;
     border: 2px solid #f4f4f4;
