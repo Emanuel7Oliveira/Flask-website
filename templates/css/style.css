@@ -26,8 +26,20 @@ header h1 {
   margin-bottom: 10px;
 }
 
-header p {
+header h2 {
+  color: #d4c2aa;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+header h3 {
   color: #9c6f44;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #d4c2aa;
   font-size: 1.2em;
 }
 

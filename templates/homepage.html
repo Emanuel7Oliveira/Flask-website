@@ -11,8 +11,8 @@
     <h1>GetShare</h1>
     <p>Compartilhando ideias e projetos</p>
 {% if user %}
-    <span>Bem-vindo, {{ user['name'] }}</span>
-    <a class="highlights" href="{{ url_for('logout') }}">Logout</a>
+    <span><h2>Bem-vindo, {{ user['name'] }}</h2></span>
+    <a class="highlights" href="{{ url_for('logout') }}" style="text-decoration: none"><h3>Logout</h3></a>
 {% else %}
     <form method="GET">
         <button class="login_button1" type="submit" formaction="{{ url_for('login') }}">Login</button>
