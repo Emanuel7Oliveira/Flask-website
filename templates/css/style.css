@@ -97,6 +97,7 @@ input[type="password"] {
     background-color: #9c6f44;
     color: #563517;
     font-size: 1.2em;
+    font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -135,6 +136,10 @@ input[type="password"] {
 .highlight h2 {
   color: #9c6f44;
   margin-bottom: 10px;
+}
+
+.highlight h3 {
+  width: 180px;
 }
 
 .highlight p {
