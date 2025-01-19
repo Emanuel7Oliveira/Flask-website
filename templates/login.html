@@ -8,12 +8,24 @@
 </head>
 <body>
     <div class="container">
-        <h1>Login</h1>
-        <form method="POST">
-            <label for="username">Nome de usuário:</label>
-            <input type="text" id="username" name="username" required placeholder="Digite seu nome de usuário">
-            <button type="submit" class="login_button">Entrar</button>
-        </form>
+      <section class="highlights">
+        <div class="highlight">
+          <h1>Login</h1>
+          <form method="POST" action="/login">
+              <label for="username">Nome de usuário:</label><br>
+              <input type="text" id="username" name="username" required placeholder="Digite seu nome de usuário">
+              <br>
+              <label for="password">Senha:</label><br>
+              <input type="password" id="password" name="password" required placeholder="Digite sua senha"><br>
+              <button type="submit" class="login_button">Entrar</button>
+          </form>
+          <br>
+          <p>Ainda não possui uma conta?</p>
+          <a href="{{ url_for('sign') }}">
+              <button class="login_button" >Criar conta</button>
+          </a>
+        </div>
+      </section>
     </div>
 </body>
 </html>

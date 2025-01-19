@@ -10,14 +10,14 @@
   <header>
     <h1>GetShare</h1>
     <p>Compartilhando ideias e projetos</p>
-    {% if username != '' %}
-    <span>Bem-vindo, {{ username }}</span>
-    <a class="highlights" href="{{ url_for('logout') }}">Logout</a>
-    {% else %}
+{% if user %}
+    <span><h2>Bem-vindo, {{ user['name'] }}</h2></span>
+    <a class="highlights" href="{{ url_for('logout') }}" style="text-decoration: none"><h3>Logout</h3></a>
+{% else %}
     <form method="GET">
-        <button class="login_button1" type="submit" formaction="http://127.0.0.1:5000/login">Login</button>
+        <button class="login_button1" type="submit" formaction="{{ url_for('login') }}">Login</button>
     </form>
-    {% endif %}
+{% endif %}
   </header>
   <div class="container">
     <section class="highlights">

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Criar usuário</title>
+</head>
+<body>
+<div class="container">
+  <section class="highlights">
+    <div class="highlight">
+      <h1>Criar conta</h1>
+      <form action="http://127.0.0.1:5000/signup" method="POST">
+            <input type="text" name="fullname" placeholder="Nome completo" required><br>
+            <input type="text" name="username" placeholder="Nome de usuário" required><br>
+            <input type="email" name="email" placeholder="seu_email@email.com" required><br>
+            <input type="password" name="password" placeholder="Senha" required><br>
+            <button type="submit" class="login_button">Criar conta</button>
+      </form>
+      <br>
+      <a href="http://127.0.0.1:5000/">Voltar</a>
+      {% if error %}
+          <span>{{ error }}</span>
+      {% endif %}
+    </div>
+  </section>
+</div>
+</body>
+</html>
